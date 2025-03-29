@@ -1,0 +1,20 @@
+.card {
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Стили для разных тем */
+  .theme-design {
+    border-left: 4px solid #ff6b6b;
+  }
+  
+  .theme-web {
+    border-left: 4px solid #4ecdc4;
+  }
+  
+  .default {
+    border-left: 4px solid #ddd;
+  }
+  

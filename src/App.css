@@ -40,3 +40,34 @@
 .read-the-docs {
   color: #888;
 }
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Временные границы для отладки */
+.header { border: 2px solid blue; }
+.main { border: 2px solid green; }
+.column { border: 1px solid red; }
+/* Принудительные стили */
+body, #root, .app {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  height: 60px;
+  background: blue;
+  color: white;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}

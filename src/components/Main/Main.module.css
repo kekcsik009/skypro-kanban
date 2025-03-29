@@ -1,0 +1,14 @@
+.main {
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .columns {
+    display: flex;
+    gap: 20px;
+  }
+  
