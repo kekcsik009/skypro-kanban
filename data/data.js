@@ -7,7 +7,6 @@
     status: "Без статуса",
     text: "Описание"
   }
-  // ... другие карточки
 ];
 
 export const statusList = [
