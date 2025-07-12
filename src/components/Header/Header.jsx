@@ -40,7 +40,7 @@ const Header = ({ addNewCard, cards }) => {
               <a href="#popNewCard">Создать новую задачу</a>
             </HeaderBtnMainNew>
             <HeaderUser onClick={toggleModal}>
-              Ivan Ivanov
+              Alenka Kozina
             </HeaderUser>
             {isModalOpen && <ModalWin />}
             {isPopNewCardOpen && (

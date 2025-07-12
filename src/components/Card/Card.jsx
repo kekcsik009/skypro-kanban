@@ -1,13 +1,18 @@
-import { CardBtn, CardContent, CardDate, CardGroup, CardsCard, CardTheme, StyledCard } from "./SCard"
+import { CardBtn, CardContent, CardDate, CardGroup, CardsCard, CardTheme, StyledCard, CardStatus } from "./SCard"
 
-const Card = ({topic, title, date}) => {
+
+const topics = ["Web Design", "Research", "Copywriting"];
+const Card = ({ title, date,}) => {
     return (
         <StyledCard>
                       <CardsCard>
                         <CardGroup>
-                          <CardTheme $topic={topic}>
-                            <p>{topic}</p>
+
+                          {topics.map((topic, index) => (
+                            <CardTheme key={index} $topic={topic}>
+                            <CardStatus><p>{topic}</p></CardStatus>
                           </CardTheme>
+                            ))}
                           <a href="#popBrowse" target="_self">
                             <CardBtn>
                               <div></div>

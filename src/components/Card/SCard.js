@@ -27,7 +27,14 @@ export const CardGroup = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
+export const topicColors = {
+  "Web Design": "#FFE4C2",
+  Research: "#B4FDD1",
+  Copywriting: "#E9D4FF",
+  default: "#94A6BE",
+};
 
+// Стилизованный компонент
 export const CardTheme = styled.div`
   width: auto;
   height: 20px;
@@ -36,34 +43,27 @@ export const CardTheme = styled.div`
   font-size: 10px;
   font-weight: 600;
   line-height: 10px;
+  background-color: ${({ $topic }) => 
+    topicColors[$topic] || topicColors.default
+  };
+
   & p {
     color: ${({ $topic }) => {
       switch ($topic) {
-        case "Web Design":
-          return "#FF6D00";
-        case "Reserch":
-          return "#06B16E";
-        case "Copywriting":
-          return "#9A48F1";
-        default:
-          return "#FFFFFF";
+        case "Web Design": return "#FF6D00";
+        case "Research": return "#06B16E";
+        case "Copywriting": return "#9A48F1";
+        default: return "#FFFFFF";
       }
     }};
   }
-  background-color: ${({ $topic }) => {
-    switch ($topic) {
-      case "Web Design":
-        return "#FFE4C2";
-      case "Reserch":
-        return "#B4FDD1";
-      case "Copywriting":
-        return "#E9D4FF";
-      default:
-        return "#94A6BE";
-    }
-  }};
 `;
-
+export const CardStatus = styled.div`
+  width: auto;
+  height: 20px;
+  padding: 5px 14px;
+  border-radius: 18px;
+`;
 export const CardBtn = styled.div`
   width: 24px;
   height: 24px;
