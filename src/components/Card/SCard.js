@@ -43,6 +43,8 @@ export const CardTheme = styled.div`
   font-size: 10px;
   font-weight: 600;
   line-height: 10px;
+  display: flex;
+  align-items: center;
   background-color: ${({ $topic }) => 
     topicColors[$topic] || topicColors.default
   };
@@ -103,6 +105,7 @@ export const CardDate = styled.div`
     line-height: 13px;
     color: #94a6be;
     letter-spacing: 0.2px;
+   
   }
   & svg {
     width: 13px;

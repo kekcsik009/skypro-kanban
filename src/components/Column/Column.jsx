@@ -13,7 +13,7 @@ const Column = ({ status, cards }) => {
             <Card
               date={card.date}
               title={card.title}
-              topic={card.topic}
+              theme={card.theme}
               key={card.id}
               cat={card.cat}
             />
