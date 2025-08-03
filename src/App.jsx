@@ -1,4 +1,4 @@
-import "./App.css";
+
 import "../public/assets/logo.png";
 import Header from "./components/Header/Header";
 import PopBrowse from "./components/PopBrowse/PopBrowse";
@@ -21,7 +21,6 @@ function App() {
       setLoading(false);
     }, 1500);
   }, [loading]);
-
   return (
     <>
     <GlobalStyles/>
@@ -57,7 +56,6 @@ function App() {
           </Container>
         </main>
       </Wrapper>
-
       <script src="js/script.js"></script>
     </>
   );
