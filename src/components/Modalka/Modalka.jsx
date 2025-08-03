@@ -3,8 +3,8 @@ import { HeaderPopUserSet, PopUserSetMail, PopUserSetName, PopUserSetTheme } fro
 const ModalWin = () => {
   return (
     <HeaderPopUserSet id="user-set-target">
-      <PopUserSetName>Ivan Ivanov</PopUserSetName>
-      <PopUserSetMail>ivan.ivanov@gmail.com</PopUserSetMail>
+      <PopUserSetName>Sergei Sergeev</PopUserSetName>
+      <PopUserSetMail>Sergei.Sergei@gmail.com</PopUserSetMail>
       <PopUserSetTheme>
         <p>Темная тема</p>
         <input type="checkbox" name="checkbox" />

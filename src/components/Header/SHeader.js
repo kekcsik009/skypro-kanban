@@ -32,6 +32,7 @@ export const HeaderBlock = styled.div`
 export const HeaderLogo = styled.div`
   & img {
     width: 85px;
+    height: 70px
   }
 `;
 
